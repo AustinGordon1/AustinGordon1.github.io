@@ -53,6 +53,7 @@ $(function () {
     createPlatform(100, 275, 50, 40);
     createPlatform(225, 150, 50, 20);
     createPlatform(140, 300, 30, 15);
+    createPlatform(100, 200, 1, 100);
 
     // TODO 2
     // Create collectables
@@ -69,10 +70,10 @@ $(function () {
     // Your wall choices are: 'top' 'left' 'right' and 'bottom'
     // example usage: createCannon(side, position, delay, width, height)
     createCannon("right", 600, 2000);
-    createCannon("left", 360, 2000);
-    createCannon("top", 200, 2000);
+    createCannon("left", 360, 2500);
+    createCannon("top", 190, 2250);
     createCannon("top", 525, 2000);
-    createCannon("top", 825, 2000);
+    createCannon("top", 825, 1500);
 
     /////////////////////////////////////////////////
     //////////ONLY CHANGE ABOVE THIS POINT///////////
