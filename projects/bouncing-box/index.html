@@ -77,7 +77,7 @@
         function update() {
           moveBoxTo(positionX, positionY);
           positionX = positionX + speed;
-          positionY = positionY + speed;
+          positionY = positionY + speedY;
           if (positionX >= boardWidth) {
             speed = -speed;
           }
@@ -85,10 +85,10 @@
             speed = -speed;
           }
           if (positionY >= boardHeight) {
-            speed = -speed;
+            speedY = -speedY;
           }
-          if (positionY < 1) {
-            speed = -speed;
+          if (positionY < 0) {
+            speedY = -speedY;
           }
         }
 
@@ -106,6 +106,12 @@
           }
           if (speed < 0) {
             speed -= 3;
+          }
+          if (speedY > 0) {
+            speedY += 3;
+          }
+          if (speedY < 0) {
+            speedY -= 3;
           }
           changeBoxText(points);
         }
