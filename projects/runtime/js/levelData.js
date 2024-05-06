@@ -18,6 +18,9 @@ var makeLevelData = function (window) {
           { type: "sawblade", x: 400, y: groundY },
           { type: "sawblade", x: 600, y: groundY },
           { type: "sawblade", x: 900, y: groundY },
+          { type: "enemy", x: 500, y: groundY },
+          { type: 'reward', x:1200, y: groundY },
+          {type: 'marker', x:1400, y:groundY}
         ],
       },
       {
@@ -28,8 +31,24 @@ var makeLevelData = function (window) {
           { type: "sawblade", x: 400, y: groundY },
           { type: "sawblade", x: 600, y: groundY },
           { type: "sawblade", x: 900, y: groundY },
+          { type: "enemy", x: 500, y: groundY },
+          { type: 'reward', x:1200, y: groundY },
+          {type: 'marker', x:1400, y:groundY}
         ],
       },
+      {
+      name: "invading the invaders",
+      number: 3,
+      speed: -4,
+      gameItems:[
+        { type: "sawblade", x: 400, y: groundY },
+          { type: "sawblade", x: 600, y: groundY },
+          { type: "sawblade", x: 900, y: groundY },
+          { type: "enemy", x: 500, y: groundY },
+          { type: 'reward', x:1200, y: groundY },
+          {type: 'marker', x:1400, y:groundY}
+      ]
+      }
     ];
     window.opspark.levelData = levelData;
   };
